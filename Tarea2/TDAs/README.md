@@ -1,3 +1,7 @@
+gcc TDAs/main.c TDAs/tdas/list.c TDAs/tdas/extra.c TDAs/tdas/map.c -o programa
+C:/Tarea2/TDAs/data/song_dataset_.csv
+
+
 En este *repl* puedes encontrar varios ejemplos que te pueden ayudar con las tareas de estructura.
 
 ## Código de Ejemplo (tarea1)
