@@ -63,21 +63,26 @@ char* copiarCadena(const char *og)
   return nuevo;
 }
 
-// Elimina espacios al inicio y final de una cadena 
+// Elimina espacios al inicio y final de una cadena modificando directamente la original
 void cortar_espacios(char* cadena)
 {
   if(cadena == NULL) return;
+  //Se quitan espacios al inicio
   char *inicio = cadena;
-  while (*inicio && isspace((unsigned char)*inicio) )
+  while (*inicio && isspace((unsigned char)*inicio) ) //se avanza mientras haya espacios
   {
     inicio++;
   }
-  memmove(cadena, inicio, strlen(inicio)+1);
-  char* final = cadena + strlen(cadena)-1;
-  while (final >= cadena && isspace((unsigned char)*final))
+  //Se desplaza la parte sin espacios al principio de la cadena
+  memmove(cadena, inicio, strlen(inicio)+1); //se incluye el caracter '\0'
+
+  //Se quitan espacios al final de la cadena
+  char* final = cadena + strlen(cadena)-1; //antes del '\0'
+  while (final >= cadena && isspace((unsigned char)*final)) //retrocede mientras haya espacios
   {
     final--;
   }
+  //Se coloca el caracter '\0' despues del ultimo caracter valido, sino todo falla :p
   *(final + 1) = '\0';  
 }
 /**
