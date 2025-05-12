@@ -1,5 +1,5 @@
 # Base de Datos de Canciones
-
+Nota: abrir este texto en modo edicion si se ve de forma extraña
 ## Descripción  
 Aplicación en C para gestionar una colección de canciones desde archivos CSV. Permite buscar por género, artista y tempo (BPM), organizando los datos en mapas y listas para un acceso eficiente.
 
@@ -41,10 +41,9 @@ Aplicación en C para gestionar una colección de canciones desde archivos CSV. 
 
 **Problemas conocidos**:
   1.Limpieza de pantalla:
-  
     -Comportamiento: No limpia completamente la pantalla en algunas terminales.
-    -Causa probable: Uso de system("clear") no compatible con todos los sistemas.
-
+    -Causa probable: Uso de system("clear") no compatible con todos los sistemas
+    
   2.Acentos:
     -Comportamiento: El programa debe mostrar un caracter con acento, muestra otra cosa
     -Causa probable: No se hizo un soporte para estos casos
