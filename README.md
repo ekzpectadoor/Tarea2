@@ -41,6 +41,7 @@ Aplicación en C para gestionar una colección de canciones desde archivos CSV. 
 
 **Problemas conocidos**:
   1.Limpieza de pantalla:
+  
     -Comportamiento: No limpia completamente la pantalla en algunas terminales.
     -Causa probable: Uso de system("clear") no compatible con todos los sistemas.
 
