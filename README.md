@@ -29,15 +29,15 @@ Aplicación en C para gestionar una colección de canciones desde archivos CSV. 
    Ejecutar en la terminal:
    ./music o .\music.exe
 
-**Funcionalidades**
+**Funcionalidades** 
   Funcionando correctamente:
   1. Cargar canciones desde CSV: Lee archivos CSV con campos como artista, género, tempo, etc.
    
-  2.Búsqueda por género: Muestra todas las canciones de un género específico.
+  2. Búsqueda por género: Muestra todas las canciones de un género específico.
   
-  3.Búsqueda por artista: Lista canciones agrupadas por artista (soporta múltiples artistas por canción).
+  3. Búsqueda por artista: Lista canciones agrupadas por artista (soporta múltiples artistas por canción).
 
-  4.Filtrar por tempo: Clasifica canciones en lentas (<80 BPM), moderadas (80-120 BPM), y rápidas (>120 BPM).
+  4. Filtrar por tempo: Clasifica canciones en lentas (<80 BPM), moderadas (80-120 BPM), y rápidas (>120 BPM).
 
 **Problemas conocidos**:
   1.Limpieza de pantalla:
